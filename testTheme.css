@@ -1,0 +1,639 @@
+/*
+    How to generate a theme for your company: 
+    
+        1 - Go to https://silkui.outsystems.com/ThemeCustomizer/GenerateDublin.aspx
+        2 - Copy the generated CSS
+        3 - Replace the CSS for Primary Color Customization below with the Generated CSS
+
+*/
+
+/*------------------------------------*\
+             Import Font
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('/SilkUIFonts/fonts/OpenSans-Regular.eot');
+    src: url('/SilkUIFonts/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/SilkUIFonts/fonts/OpenSans-Regular.woff') format('woff'),
+         url('/SilkUIFonts/fonts/OpenSans-Regular.ttf') format('truetype'),
+         url('/SilkUIFonts/fonts/OpenSans-Regular.svg#Open-Sans') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('/SilkUIFonts/fonts/OpenSans-Bold.eot');
+    src: url('/SilkUIFonts/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/SilkUIFonts/fonts/OpenSans-Bold.woff') format('woff'),
+         url('/SilkUIFonts/fonts/OpenSans-Bold.ttf') format('truetype'),
+         url('/SilkUIFonts/fonts/OpenSans-Bold.svg#Open-Sans') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('/SilkUIFonts/fonts/OpenSans-Italic.eot');
+    src: url('/SilkUIFonts/fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+         url('/SilkUIFonts/fonts/OpenSans-Italic.woff') format('woff'),
+         url('/SilkUIFonts/fonts/OpenSans-Italic.ttf') format('truetype'),
+         url('/SilkUIFonts/fonts/OpenSans-Italic.svg#Open-Sans') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('/SilkUIFonts/fonts/OpenSans-Semibold.eot');
+    src: url('/SilkUIFonts/fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('/SilkUIFonts/fonts/OpenSans-Semibold.woff') format('woff'),
+         url('/SilkUIFonts/fonts/OpenSans-Semibold.ttf') format('truetype'),
+         url('/SilkUIFonts/fonts/OpenSans-Semibold.svg#Open-Sans') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/SilkUIFonts/fonts/Oswald-Regular.eot');
+    src: url('/SilkUIFonts/fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/SilkUIFonts/fonts/Oswald-Regular.woff') format('woff'),
+         url('/SilkUIFonts/fonts/Oswald-Regular.ttf') format('truetype'),
+         url('/SilkUIFonts/fonts/Oswald-Regular.svg#oswaldregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/SilkUIFonts/fonts/Oswald-Bold.eot');
+    src: url('/SilkUIFonts/fonts/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/SilkUIFonts/fonts/Oswald-Bold.woff') format('woff'),
+         url('/SilkUIFonts/fonts/Oswald-Bold.ttf') format('truetype'),
+         url('/SilkUIFonts/fonts/Oswald-Bold.svg#oswaldbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/SilkUIFonts/fonts/Oswald-Light.eot');
+    src: url('/SilkUIFonts/fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+         url('/SilkUIFonts/fonts/Oswald-Light.woff') format('woff'),
+         url('/SilkUIFonts/fonts/Oswald-Light.ttf') format('truetype'),
+         url('/SilkUIFonts/fonts/Oswald-Light.svg#oswaldlight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*------------------------------------*\
+             Font Definition
+\*------------------------------------*/
+
+html, body, a, select, form, fieldset, table, tr, td, img, input, button, select, textarea, optgroup, option {
+    font-family: 'Open-Sans', Meiryo, sans-serif;
+}
+
+.TileIcon_text, .TileNumber_text, .TileIconText_label, .Heading1, .Heading2, .Heading3, .Heading4, .Header_title a, .EditableTable thead td, .TableRecords_Header {
+    font-family: 'Oswald', Meiryo, sans-serif;
+}
+
+/*------------------------------------*\
+              Font Classes
+\*------------------------------------*/
+
+/* Font Oswald classes */
+
+.Oswald_Regular {
+    font-family: 'Oswald',Meiryo;
+    font-weight: 400;
+}
+
+.Oswald_Bold {
+    font-family: 'Oswald',Meiryo;
+    font-weight: 700;
+}
+
+.Oswald_Light {
+    font-family: 'Oswald',Meiryo;
+    font-weight: 300;
+}
+
+/* Font OpenSans classes */
+
+.OpenSans_Regular {
+    font-family:  'Open-Sans', Meiryo, sans-serif;
+    font-weight: 400;
+}
+
+.OpenSans_Bold {
+    font-family:  'Open-Sans', Meiryo, sans-serif;
+    font-weight: 700;
+}
+
+.OpenSans_Italic {
+    font-family:  'Open-Sans',Meiryo, sans-serif;
+    font-style: italic;
+}
+
+.OpenSans_Semibold {
+    font-family:  'Open-Sans',Meiryo, sans-serif;
+    font-weight: 600;
+}
+
+
+
+/***************************************/r
+/***** PRIMARY COLOR CUSTOMIZATION *****/
+/***************************************/
+
+.Heading1,
+.Heading2,
+.Heading3,
+.Heading4 {
+    color: #00AA00; /*primary-color*/
+}
+
+.Menu_DropDownPanel {
+    background-color: #00AA00; /*primary-color*/
+    -webkit-filter: brightness(110%);
+    filter: brightness(1.1);
+}
+
+.Header__activity,
+.LoginInfo,
+.Login_Text,
+.Text_black {
+    color: #00AA00; /*primary-color*/
+}
+
+.phone .Menu .LoginInfo {
+    background-color: #00AA00; /*primary-color*/
+    -webkit-filter: brightness(90%);
+    filter: brightness(0.9);
+    -servicestudio--webkit-filter: brightness(-0.1);
+}
+
+
+.Menu {
+    background: #00AA00; /*primary-color*/
+}
+
+.Menu_TopMenu a:link,
+.Menu_TopMenu a:visited,
+.Menu_TopMenu a {
+    border-bottom-color: rgba(0,0,0,0.1);
+    box-shadow:none;
+}
+
+.Menu_DropDownPanel a.Menu_SubMenuItemActive, 
+.Menu_DropDownPanel a.Menu_SubMenuItemActive:visited,
+.Menu_DropDownPanel a.Menu_SubMenuItemActive:link,
+.Menu_DropDownPanel a.Menu_SubMenuItem:hover {
+    -webkit-filter: brightness(90%);
+    filter: brightness(0.9);
+    -servicestudio--webkit-filter: brightness(-0.1);
+}
+
+.Menu_TopMenu a:hover, 
+.Menu_TopMenu a:link:hover, 
+.Menu_TopMenu a:visited {
+    border-left-color: #00AA00; /*primary-color*/
+}
+
+
+.Menu_TopMenu a span.fa {
+    border-color: #FFF;
+}
+
+.Menu_TopMenu:hover,
+.Menu_TopMenu:hover a [class^=fa],
+.Menu_TopMenuActive a:link [class^=fa],
+.Menu_TopMenuActive a:visited [class^=fa],
+.Menu_DropDownPanel a.Menu_SubMenuItemActive, 
+.Menu_DropDownPanel a.Menu_SubMenuItemActive:visited,
+.Menu_DropDownPanel a.Menu_SubMenuItemActive:link,
+.Menu_DropDownPanel a.Menu_SubMenuItem:hover {
+    background-color: #00AA00; /*primary-color*/
+    -webkit-filter: brightness(90%);
+    filter: brightness(0.9);
+    -servicestudio--webkit-filter: brightness(-0.1);
+}
+
+.Menu_TopMenu a:hover, 
+.Menu_TopMenu a:link:hover, 
+.Menu_TopMenu a:visited {
+    border-left-color: #FFF;
+}
+
+.tablet .Menu_TopMenu .Menu_DropDownArrow {
+    border-left-color: #00AA00; /*primary-color*/
+    -webkit-filter: brightness(80%);
+    filter: brightness(0.8);
+    -servicestudio--webkit-filter: brightness(-0.2);
+}
+
+.tablet .Menu_TopMenu:hover .Menu_DropDownArrow {
+    border-left-color: #FFF;
+}
+
+.tablet .Menu_TopMenuActive .Menu_DropDownArrow, 
+.tablet .Menu_TopMenuActive:hover .Menu_DropDownArrow {
+    border-left-color: #FFF;
+}
+
+.Menu_TopMenu:hover span.fa {
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.Menu_TopMenu:hover .Menu_DropDownArrow {
+    border-top-color: #FFF;
+}
+
+.Menu_TopMenuActive:hover a:link, .Menu_TopMenuActive a:link,
+.Menu_TopMenuActive:hover a:visited, .Menu_TopMenuActive a:visited,
+.Menu_TopMenuActive:hover a, .Menu_TopMenuActive a,
+.Menu_TopMenu:hover a, .Menu_TopMenu a {
+    color: #FFF;
+}
+
+.Menu_TopMenuActive .Menu_DropDownArrow,
+.Menu_TopMenuActive:hover .Menu_DropDownArrow {
+    border-top-color: #FFF;
+    border-left-color: #00AA00; /*primary-color*/
+}
+
+.Menu_DropDownArrow {
+    border-top-color: #FFF;
+}
+
+
+.Menu_TopMenuActive a:link,
+.Menu_TopMenuActive a:visited {
+   background-color: #00AA00; /*primary-color*/
+   border-left-color: #FFF;
+}
+
+.Menu_TopMenuActive a span.fa {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.Menu_TopMenuActive{
+    -webkit-filter: brightness(90%);
+    filter: brightness(0.9);
+    -servicestudio--webkit-filter: brightness(-0.1);
+}
+
+.Menu_DropDownPanel a span.fa {
+    color: #FFF;
+}
+
+a.ListNavigation_PageNumber:link,
+span.ListNavigation_CurrentPageNumber,
+span.ListNavigation_Ellipsis {
+    color: #00AA00; /*primary-color*/
+}
+
+
+
+a.ListNavigation_Previous:link,
+a.ListNavigation_Next:link,
+span.ListNavigation_DisabledNext, 
+span.ListNavigation_DisabledPrevious {
+    color: #00AA00; /*primary-color*/
+}
+
+.Feedback_AjaxWait {
+    color: #00AA00; /*primary-color*/
+}
+
+.Login_Footer {
+    background: #00AA00; /*primary-color*/
+    background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-image:    -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-image:     -ms-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-image:      -o-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-image:          linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.AccordionVertical_item.open .AccordionVertical__header {
+    border-top-color: #00AA00; /*primary-color*/
+}
+
+.AccordionVertical_item.open .AccordionVertical___icon > .fa {
+    background-color:  #00AA00; /*primary-color*/
+    border-color:  #00AA00; /*primary-color*/
+}
+
+.AccordionVertical_item.open > .AccordionVertical__header > .AccordionVertical___icon > .fa {
+    background-color: #00AA00; /*primary-color*/
+    border-color: #00AA00; /*primary-color*/
+}
+
+.Post_icon img {
+    border-color: #00AA00; /*primary-color*/
+}
+
+.expanded .SectionExpandable__icon.Heading2 > .fa {
+    background-color: #00AA00; /*primary-color*/
+    border: #00AA00; /*primary-color*/
+}
+
+.Panel .SectionExpandable__icon.Heading2 > .fa {
+    color: #00AA00; /*primary-color*/
+    border: 1px solid #00AA00; /*primary-color*/
+}
+
+.Panel .expanded .SectionExpandable__icon.Heading2 > .fa {
+    background-color: #00AA00; /*primary-color*/
+    border: #00AA00; /*primary-color*/
+}
+.Calendar-day-selected, 
+.Calendar-day-selected:hover {
+    background: #00AA00; /*primary-color*/
+}
+
+.Calendar-navDisabled > div, 
+.topBar-navDisabled .Calendar-navBtn > div,
+.Calendar-time-down, 
+.Calendar-time-up, 
+.Calendar-time-am {
+    color: #00AA00; /*primary-color*/
+}
+
+.Calendar-dayNames {
+    border-top-color: #00AA00; /*primary-color*/
+}
+
+.Calendar-navBtn > div {
+    color: #00AA00; /*primary-color*/
+}
+
+.select2-container .select2-choice {
+    color: #00AA00; /*primary-color*/
+}
+
+.desktop .NavigationBar a:hover, 
+.desktop .NavigationBar a:link:hover {
+    color: #00AA00; /*primary-color*/
+}
+
+.NavigationBar a.Active {
+    color: #00AA00; /*primary-color*/
+}
+
+.desktop .NavigationBar a:hover:after, 
+.desktop .NavigationBar a:link:hover:after,
+.NavigationBar a.Active:after {
+    background-color: #00AA00; /*primary-color*/ 
+}
+
+.NavigationBar a.Active:not(.IE8):before {
+    border-bottom-color: #00AA00; /*primary-color*/
+}
+
+.desktop .NavigationBar.Vertical a:hover,
+.desktop .NavigationBar.Vertical a:link:hover,
+.NavigationBar.Vertical a.Active,
+.NavigationBar.Vertical a:link.Active {
+  border-color: #00AA00; /*primary-color*/
+}
+
+.NavigationBar.Vertical a.Active:not(.IE8):before {
+    border-left-color: #00AA00; /*primary-color*/
+}
+
+.phone .NavigationBar .InlineDropdown:active,
+.phone .NavigationBar .InlineDropdown:link:active,
+.tablet .NavigationBar .InlineDropdown:active,
+.tablet .NavigationBar .InlineDropdown:link:active,
+.phone .NavigationBar a:active, 
+.phone .NavigationBar a:link:active,
+.tablet .NavigationBar a:active, 
+.tablet .NavigationBar a:link:active {
+    color: #00AA00; /*primary-color*/
+}
+
+.phone .NavigationBar .InlineDropdown:active:after,
+.phone .NavigationBar .InlineDropdown:link:active:after,
+.tablet .NavigationBar .InlineDropdown:active:after,
+.tablet .NavigationBar .InlineDropdown:link:active:after,
+.phone .NavigationBar a:active:after, 
+.phone .NavigationBar a:link:active:after,
+.tablet .NavigationBar a:active:after, 
+.tablet .NavigationBar a:link:active:after {
+    background-color: #00AA00; /*primary-color*/
+}
+
+.Tabs__tab.active {
+    border-top-color: #00AA00; /*primary-color*/
+}
+
+.Panel .Tabs__tab.active:not(.ie8):before {
+    border-top-color: #00AA00; /*primary-color*/
+}
+
+.WizardStep.ActiveStep {
+    background: #00AA00; /*primary-color*/
+    -webkit-filter: brightness(90%);
+    filter: brightness(0.9);
+    -servicestudio--webkit-filter: brightness(-0.1);
+}
+
+.WizardStep.ActiveStep:before {
+    border-top-color: #00AA00; /*primary-color*/
+    border-bottom-color: #00AA00; /*primary-color*/
+}
+
+.WizardStep.Past {
+    background: #00AA00; /*primary-color*/
+}
+
+.WizardStep.Past:before {
+    border-top-color: #00AA00; /*primary-color*/
+    border-bottom-color: #00AA00; /*primary-color*/
+}
+
+.Button,
+a.Button {
+    color: #00AA00; /*primary-color*/
+}
+
+.Button.ButtonDefault,
+.Button.Is_Default {
+    background-color: #00AA00; /*primary-color*/
+    border-color: #00AA00; /*primary-color*/
+    border-bottom-color: rgba(0,0,0,0.2);
+}
+
+.desktop .Button.ButtonDefault:hover, 
+.desktop .Button.Is_Default:hover {
+    background-color: #00AA00; /*primary-color*/
+    border-color: #00AA00; /*primary-color*/
+    border-bottom-color: rgba(0,0,0,0.2);
+    -webkit-filter: brightness(80%);
+    filter: brightness(0.8);
+    -servicestudio--webkit-filter: brightness(-0.2);
+}
+.Button.Cancel,
+.desktop .Button.Cancel:hover {
+    border-color: #999;
+    color: #999;
+}
+.desktop .Button.Cancel:hover {
+    -webkit-filter: brightness(80%);
+    filter: brightness(0.8);
+    -servicestudio--webkit-filter: brightness(-0.2);
+}
+
+a,
+a:link,
+a:visited,
+.EditableTable tr.RowControlGroup a,
+.Button.Link {
+    color: #00AA00; /*primary-color*/
+}
+
+a.ActionAdd:hover{
+    background-color: #00AA00; /*primary-color*/
+    border-bottom-color: #00AA00; /*primary-color*/
+    -webkit-filter: brightness(90%);
+    filter: brightness(0.9);
+    -servicestudio--webkit-filter: brightness(-0.1);
+}
+a.ActionDelete:hover{
+    background-color: #bb5858;
+    -webkit-filter: brightness(90%);
+    filter: brightness(0.9);
+    -servicestudio--webkit-filter: brightness(-0.1);
+}
+
+a.ActionAdd,
+a.ActionDelete {
+    color: #FFF;
+}
+
+a.ActionAdd {
+    background-color: #00AA00; /*primary-color*/
+    border-bottom-color: #00AA00; /*primary-color*/
+}
+
+
+.desktop .Button.Link:hover {
+    background-color: transparent;
+    border-color: #00AA00; /*primary-color*/
+    color: #00AA00; /*primary-color*/
+}
+
+div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar,
+div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar {
+    background: #00AA00; /*primary-color*/
+}
+
+
+.SectionIndex a.active, 
+.SectionIndex a:hover{    
+    border-bottom-color: #00AA00; /*primary-color*/
+    color: #00AA00; /*primary-color*/
+}
+
+.SectionIndex.vertical a.active, 
+.SectionIndex.vertical  a:hover{
+    border-left-color: #00AA00; /*primary-color*/
+}
+
+.TableRecords > tbody > tr > td a {
+    color: #00AA00; /*primary-color*/
+}
+
+.IconBadge_number {
+    background-color: #00AA00; /*primary-color*/
+}
+
+.pika-prev:after,
+.pika-next:after {
+    color: #00AA00; /*primary-color*/ 
+}
+
+.pika-title {
+    border-bottom: 2px solid #00AA00; /*primary-color*/
+}
+
+.is-selected .pika-button {
+   background-color: #00AA00; /*primary-color*/
+}
+
+.has-event .pika-button:after {
+   background-color: #00AA00; /*primary-color*/ 
+}
+
+
+
+.Feedback_AjaxWait {
+    color: #222;
+}
+
+@-webkit-keyframes loader {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 .2em #222, 2em -2em 0 0 #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 0 #222;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0 #222, 2em -2em 0 .2em #222, 3em 0 0 0 #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 0 #222, 3em 0 0 .2em #222, 2em 2em 0 0 #222, 0 3em 0 -.5em #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 0 #222, 2em 2em 0 .2em #222, 0 3em 0 0 #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 0 #222, 0 3em 0 .2em #222, -2em 2em 0 0 #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 0 #222, -2em 2em 0 .2em #222, -3em 0 0 0 #222, -2em -2em 0 -.5em #222;
+    }
+    75% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 0 #222, -3em 0 0 .2em #222, -2em -2em 0 0 #222;
+    }
+    87.5% {
+        box-shadow: 0 -3em 0 0 #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 0 #222, -3em 0 0 0 #222, -2em -2em 0 .2em #222;
+    }
+}
+@keyframes loader {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 .2em #222, 2em -2em 0 0 #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 0 #222;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0 #222, 2em -2em 0 .2em #222, 3em 0 0 0 #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 0 #222, 3em 0 0 .2em #222, 2em 2em 0 0 #222, 0 3em 0 -.5em #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 0 #222, 2em 2em 0 .2em #222, 0 3em 0 0 #222, -2em 2em 0 -.5em #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 0 #222, 0 3em 0 .2em #222, -2em 2em 0 0 #222, -3em 0 0 -.5em #222, -2em -2em 0 -.5em #222;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 0 #222, -2em 2em 0 .2em #222, -3em 0 0 0 #222, -2em -2em 0 -.5em #222;
+    }
+    75% {
+        box-shadow: 0 -3em 0 -.5em #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 0 #222, -3em 0 0 .2em #222, -2em -2em 0 0 #222;
+    }
+    87.5% {
+        box-shadow: 0 -3em 0 0 #222, 2em -2em 0 -.5em #222, 3em 0 0 -.5em #222, 2em 2em 0 -.5em #222, 0 3em 0 -.5em #222, -2em 2em 0 0 #222, -3em 0 0 0 #222, -2em -2em 0 .2em #222;
+    }
+}
+
+
+.Application_Menu {
+    -servicestudio-background: #00AA00; /*primary-color*/
+    -servicestudio-height: 100%;
+}
